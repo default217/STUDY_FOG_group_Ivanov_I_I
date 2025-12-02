@@ -22,7 +22,7 @@ def simulate(n_tasks=30, seed=7):
     random.seed(seed)
     # Processing times (ms) per stage / Времена обработки (мс) на каждом этапе:
     sensor  = [random.randint(20, 60) for _ in range(n_tasks)]   # Sensor / Датчик
-    fog     = [random.randint(30, 80) for _ in range(n_tasks)]   # Fog node / Fog‑узел
+    fog     = [random.randint(3, 5) for _ in range(n_tasks)]   # Fog node / Fog‑узел
     courier = [random.randint(10, 40) for _ in range(n_tasks)]   # Courier / Курьер
 
     # End‑to‑end latency per task is the sum of stage times:
